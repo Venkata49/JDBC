@@ -1,21 +1,24 @@
 package com.oops.com;
 
-abstract class Person{
-	abstract void calculate(double x);//abstract method without body...
+import java.util.HashSet;
+import java.util.Iterator;
+
+class Person{
+	public static void main(String args[]){
+		HashSet<String> hs = new HashSet<String>();
+		hs.add("india");
+		hs.add("america");
+		hs.add("japan");
+		hs.add("chain");
+		
+		System.out.println("hashset = "+hs);
+		Iterator it = hs.iterator();
+		System.out.println("elements using iterator :");
+		while(it.hasNext()){
+			String s = (String)it.next();
+			System.out.println(s);
+		}
+		
+	}
 	
-}
-class sub1 extends Person{
-	void calculate(double x){//
-		System.out.println("square= "+ (x*x));
-	}
-}
-class sub2 extends Person{
-	void calculate(double x){
-		System.out.println("square root= "+ Math.sqrt(x));
-	}
-}
-class sub3 extends Person{
-	void calculate(double x){
-		System.out.println("cube = "+ (x*x*x));
-	}
 }
