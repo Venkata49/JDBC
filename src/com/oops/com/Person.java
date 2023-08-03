@@ -1,24 +1,25 @@
 package com.oops.com;
 
-import java.util.HashSet;
-import java.util.Iterator;
 
+
+class Student1{
+	String name;
+	int age;
+	public void printInfo(String name){
+		System.out.println(name);
+	}
+	public void printInfo(int age){
+		System.out.println(age);
+	}
+	public void printInfo(String name,int age){
+		System.out.println(name+" "+ age);
+	}
+}
 class Person{
 	public static void main(String args[]){
-		HashSet<String> hs = new HashSet<String>();
-		hs.add("india");
-		hs.add("america");
-		hs.add("japan");
-		hs.add("chain");
-		
-		System.out.println("hashset = "+hs);
-		Iterator it = hs.iterator();
-		System.out.println("elements using iterator :");
-		while(it.hasNext()){
-			String s = (String)it.next();
-			System.out.println(s);
+		Student1 in = new Student1();
+		in.name = "venkat";
+		in.age = 23;
+		in.printInfo(in.name, in.age);
 		}
-		
-	}
-	
 }
