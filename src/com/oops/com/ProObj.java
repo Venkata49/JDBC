@@ -10,7 +10,7 @@ class ProObj {
 	
 	public void accept() throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		System.out.println("Enter name : ");
+		System.out.println("Enter name is : ");
 		name = br.readLine();
 		
 		System.out.println("Enter age :");
