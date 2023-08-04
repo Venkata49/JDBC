@@ -8,7 +8,7 @@ public class Linkedlist {
 		
 		LinkedList<String> list = new LinkedList<String>();
 		
-//		LinkedList Add() Operations
+//		LinkedList Add() Operations..
 		
 		list.add("A");
 		list.add("B");
