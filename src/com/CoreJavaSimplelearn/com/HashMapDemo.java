@@ -30,6 +30,10 @@ public class HashMapDemo {
 		System.out.println("______________________");
 		for(Entry<String, Integer>entry : map.entrySet()){
 			System.out.println("key " + entry.getKey()+" vlaue " + entry.getValue());
+/*			output is :key venkat vlaue 10
+					   key sreeni vlaue 30
+					   key kumar vlaue 20
+*/ 
 		}
 	}
 
