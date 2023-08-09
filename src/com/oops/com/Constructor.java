@@ -1,7 +1,7 @@
 package com.oops.com;
 
 import java.io.*;
-class Constructor {
+
 
 	
 		
@@ -33,33 +33,34 @@ class Constructor {
 		  			Ex:- Person raju = new Person();
 		  				  				  
 	*/
+
+ class Constructor {
 		
-	public class Constructor{
-		public static void main(String[] args){
+		
+			private String name;
+			private int age;
 			
+			//Default constructor....
+			Constructor(){
+				name = "venkata";
+				age = 23;
+			}
+			
+			//Parameterized constructor...
+			 Constructor(String s, int i){
+				name = s;
+				age = i;
+			}
+			
+			void talk(){
+				
+				System.out.println("hello i am "+ name);
+				System.out.println("my age "+ age);
+
 		}
 	}
 		// instance variables(instance variables declare only class )
-		Private String name;
-		Private int age;
-		
-		//Default constructor....
-		Constructor(){
-			name = "venkata";
-			age = 23;
-		}
-		
-		//Parameterized constructor...
-		 Constructor(String s, int i){
-			name = s;
-			age = i;
-		}
-		
-		void talk(){
-			
-			System.out.println("hello i am "+ name);
-			System.out.println("my age "+ age);
-		}
-	}
+				
+	
 
 

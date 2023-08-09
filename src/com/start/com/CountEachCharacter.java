@@ -12,7 +12,7 @@ public class CountEachCharacter {
 		String[] arr = name.split(" ");
 		//Map<String,List<String>> map = Arrays.stream(arr).collect(Collectors.groupingBy(s->s));
 		//System.out.println(map);
-		Map<String,Long> mawp = Arrays.stream(arr).collect(Collectors.groupingBy(s->s));
+		Map<Object, List<String>> mawp = Arrays.stream(arr).collect(Collectors.groupingBy(s->s));
 		System.out.println(mawp);
 	}
 
